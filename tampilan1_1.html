@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formand Post</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor = "pink">
+    <h1 align= "center">Isikan Data Diri Anda</h1>
+    <form action="CobaDatabase.php" method = "POST">
+        
+        <div >
+            <label  >Nama :</label><input type="text" name="nama"/>
+        </div>
+        <div>
+            <label>Umur : </label><input type="text" name="umur">
+        </div>
+        <div>
+            <label >Alamat :</label><input type="text" name = "alamat">
+        </div>
+        
+        <div >
+            <label >Nomor Telpon :</label><input type="text" name="hp"/>
+        </div>
+        <select name="Hobi" >
+            <option value="">----pilih hobi-----</option>
+            <option value="1">1. Bersepedah</option>
+            <option value="2">2. Berenang</option>
+            <option value="3">3. Makan</option>
+            <option value="4">4. Minum</option>
+        </select>
+        <br>
+        <input type="submit" value = "Simpan"/>
+        
+    </form>
+    
+</body>
+</html>
