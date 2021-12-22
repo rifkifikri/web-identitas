@@ -7,34 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body bgcolor = "pink">
+<body bgcolor = "grey">
     <h1 align= "center">Isikan Data Diri Anda</h1>
-    <form action="CobaDatabase.php" method = "POST">
+    <center>
         
-        <div >
-            <label  >Nama :</label><input type="text" name="nama"/>
-        </div>
-        <div>
-            <label>Umur : </label><input type="text" name="umur">
-        </div>
-        <div>
-            <label >Alamat :</label><input type="text" name = "alamat">
-        </div>
-        
-        <div >
-            <label >Nomor Telpon :</label><input type="text" name="hp"/>
-        </div>
-        <select name="Hobi" >
-            <option value="">----pilih hobi-----</option>
-            <option value="1">1. Bersepedah</option>
-            <option value="2">2. Berenang</option>
-            <option value="3">3. Makan</option>
-            <option value="4">4. Minum</option>
-        </select>
-        <br>
-        <input type="submit" value = "Simpan"/>
-        
-    </form>
+        <form action="CobaDatabase.php" method = "POST">
+            <fieldset>
+                <legend> Login </legend>
+                <p>
+                    <div >
+                        <label  >Nama :</label><input type="text" name="nama"/>
+                    </div>
+                </p>
+                <p>
+                    <div>
+                        <label>Umur : </label><input type="text" name="umur">
+                    </div>
+                </p>
+                <p>
+                    <div>
+                        <label >Alamat :</label><input type="text" name = "alamat">
+                    </div>
+                </p>
+                <p>
+                    <div >
+                        <label >Nomor Telpon :</label><input type="text" name="hp"/>
+                    </div>
+                </p>
+                
+                <p>
+                    <select name="Hobi" >
+                        <option value="">----pilih hobi-----</option>
+                        <option value="1">1. Bersepedah</option>
+                        <option value="2">2. Berenang</option>
+                        <option value="3">3. Makan</option>
+                        <option value="4">4. Minum</option>
+                    </select>
+                </p>
+                
+                <br>
+                <input type="submit" value = "Simpan"/>
+                <a href="edit.php?id=<?php echo $d['id']; ?>">EDIT</a>
+            </fieldset>
+           
+        </form>
+    </center>
+   
     
 </body>
 </html>
